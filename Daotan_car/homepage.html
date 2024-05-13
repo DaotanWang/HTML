@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<!-- 优化体验 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="renderer" content="webkit">
+	<meta content="telephone=no" name="format-detection" />
+		<title>Car_byTanzi</title>
+	<!-- SEO相关 -->
+	<meta name="keywords" content="Tanzi Car"/>
+	<meta name="description" content="welcome to tanzi cars!">
+	<link rel="shortcut icon" href="logo/icon.PNG" type="image/png" />
+	
+	<!-- SEO相关网页规范化domain -->
+	<link rel="canonical" href="/">
+	
+	<!-- 不同语言对应的domain -->
+	<link rel="alternate" hreflang="en" href="/" />
+<!-- 	<link rel="alternate" hreflang="cn" href="https://cn.baidu.com/" /> -->
+	
+	<!-- 在线聊天的哪个框框 -->
+	<link rel="stylesheet" href="themes/floatwindow/css/chat.css">
+	<link rel="stylesheet" href="themes/floatwindow/css/common.css">
+	<link rel="stylesheet" href="themes/floatwindow/css/main.css">
+	
+	<!-- 引入自定义字体 -->
+	<link rel="stylesheet" href="themes/floatwindow/fonts/icons/iconfont.css">
+	<link rel="preload" href="themes/floatwindow/fonts/iconfont.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="themes/floatwindow/fonts/Lato-Bold.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="themes/floatwindow/fonts/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin>
+	
+	<script src="themes/floatwindow/js/jquery.js" type="text/javascript"></script>
+	
+	<style>  
+	        .hover-image {  
+	            position: relative;  
+	            display: inline-block;  
+	        }  
+	  
+	        .hover-image img {  
+	            display: block;  
+	        }  
+	  
+	        .hover-popup {  
+	            position: absolute;  
+	            top: 0;  
+	            left: 100%; /* 将浮窗放在原图片的右边 */  
+	            /* 其他样式，如宽度、高度、背景图片等 */  
+	            display: none; /* 默认隐藏 */  
+	            z-index: 10; /* 确保浮窗在其他元素之上 */  
+	            background: url('contact/wechat-hover.PNG') no-repeat;  
+	            width: 320px; /* 示例宽度 */  
+	            height: 320px; /* 示例高度 */  
+	        }  
+	  
+	        .hover-image:hover .hover-popup {  
+	            display: block; /* 鼠标悬停时显示浮窗 */  
+	        }  
+	    </style>  
+	
+	<!--    这一大段是GTM和社交媒体预览 暂时不管 Google Tag Manager
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-MRBSJGNL');</script>
+	End Google Tag Manager
+	<meta name="google-site-verification" content="E0-9jgxR-eyB4MPMQ3zaH_gVWK3gTaTp93dpJt9hUaI" />
+	Google tag (gtag.js)
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-RZTCJSFDKY"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	
+	  gtag('config', 'G-RZTCJSFDKY');
+	</script>
+		
+	<meta property="og:url" content="https://www.ct-nev.com/"/>
+	<meta property="og:title" content="Electric Car Manufacturer"/>
+	<meta property="og:description" content="Discover the future of transportation with our electric cars!"/>
+	<meta property="og:image" content="//image.chukouplus.com/upload/C_3781/file/20231108/7e4355620e451d863fb87d172bc8e119.jpg"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:site_name" content="CT•NEV"/>
+	<meta property="og:locale" content="en"/>
+	
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Electric Car Manufacturer" />
+	<meta name="twitter:description" content="Discover the future of transportation with our electric cars!" />
+	<meta name="twitter:image" content="//image.chukouplus.com/upload/C_3781/file/20231108/7e4355620e451d863fb87d172bc8e119.jpg" />
+	<meta name="twitter:url" content="https://www.ct-nev.com/" /> -->
+	
+	<!-- 这一大段是搜索埋码 效果优化 暂时不管 <script type="application/ld+json">
+	[
+	    {
+	        "@context": "https://schema.org/",
+	        "@type": "WebPage",
+	        "mainEntity": {
+	            "@type": "Thing",
+	            "name": "Electric Car Manufacturer",
+	            "url": "https://www.ct-nev.com"
+	        },
+	        "speakable": {
+	            "@type": "SpeakableSpecification",
+	            "xpath": "/html/head/title",
+	            "value": "Electric Car Manufacturer"
+	        }
+	    },
+	    {
+	        "@context": "https://schema.org/",
+	        "@type": "WebSite",
+	        "id": "https://www.ct-nev.com",
+	        "url": "https://www.ct-nev.com",
+	        "name": "CT•NEV",
+	        "alternateName": [
+	            "CT•NEV"
+	        ],
+	        "potentialAction": {
+	            "@type": "SearchAction",
+	            "target": "https://www.ct-nev.com/search.html?keyword={search_term_string}",
+	            "query-input": "required name=search_term_string"
+	        }
+	    }
+	]
+	</script> -->
+	
+	<link rel="stylesheet" href="themes/floatwindow/css/zxl.css">
+	<link rel="stylesheet" href="themes/floatwindow/css/inquirypwd.css">
+	
+	<script src="themes/floatwindow/js/lunbo8.js" type="text/javascript"></script>
+	
+		
+	</head>
+	
+	<body class="download">
+<!-- GTM相关 不管 Google Tag Manager (noscript)
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MRBSJGNL"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> 
+	End Google Tag Manager (noscript) -->
+	
+	<div class="xnav">
+		<div class="nav" id="nav" onClick="doAct(this);">
+			<span class="nav1"></span>
+			<span class="nav2"></span>
+			<span class="nav3"></span>
+		</div>
+	
+		<div class="smdaohang" id="smdaohang">
+			<ul class="topnav">
+						<form action="/" class="fix">
+							<input type="text" name="keyword" value=""
+									placeholder="Search..." class="iptc l">
+							<i class="iconfont icon-search4"></i>
+							<input type="submit" value="" class="ipsc r">
+						</form>
+				<li><a href="/" title="Home">Home</a></li>
+				<li><a href="/" title="About Us">About Us</a></li>
+				<li><a href="/" title="Products">Products</a>
+					<ul>
+						<li><a href="/" title="BYD">BYD</a></li>
+						<li><a href="/" title="etc1">其他产品1</a></li>
+						<li><a href="/" title="etc2">其他产品2</a></li>
+					</ul>
+				</li>
+				<li><a href="/" title="News">News</a></li>
+				<li><a href="/" title="Feedback">Feedback</a></li>
+				<li><a href="/" title="Contact Us">Contact Us</a></li>
+				<li><a href="/" title="Language">Language</a>
+					<ul>
+						<li><a href="/" title="English">English</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<!-- 真 head  -->
+	<header class="head">
+		<div class="container">
+			<a href="/" title="Tanzi" class="logo" data-scroll-reveal="enter top over 1s after 0s">
+				<span style=" display: block; position: relative; height: 0px; padding-bottom: 56%">
+					<img src="logo/logo.PNG" alt="logo" title="logo" style="max-width: 100%; max-height: 100%; position: absolute; left: 0; top: 50%; transform: translateY(-50%)">
+				</span>
+			</a>
+			<!-- <div class="yvn pull-right">
+				<a class="yvzhonga">English</a>
+				<ul class="yvul">
+					<li>
+					    <a href="https://www.baidu.com/" target="_blank" rel="nofollow">
+					        English                    
+						</a>
+					</li>
+					<li>
+						<a href="https://www.baidu.com/" target="_blank" rel="nofollow">
+						    语言还能往后加                    
+						</a>
+					</li>
+				</ul>				
+			</div> -->
+			<!-- <div class="sousuo">
+				<span class="sou2 iconfont icon-sousuo"></span>
+				<form action="/">
+					<input class="sou fl" name="keyword" type="text" value="" placeholder="Search...">
+					<input class="suo fl" type="submit" value="">
+					<span class="sou1 iconfont icon-sousuo"></span>
+				</form>
+			</div> -->
+			<nav class="daoz">
+				<ul class="daohang">
+					<li   class="dangqiandao" >
+						<a href="/" title="Home">Home</a>
+					</li>
+					<li>
+						<a href="/" title="About Us">About Us</a>
+					</li>
+					<li>
+						<a href="/" title="Products">Products</a>
+						<ul class="yijiw">
+							<div class="yiji">
+								<li>
+									 <a href="/" title="BYD">BYD</a>
+								</li>
+								<li>
+									 <a href="/" title="etc1">其他产品1</a>
+								</li>
+								<li>
+									 <a href="/" title="etc2">其他产品2</a>
+								</li>
+							</div>
+						</ul>
+					</li>
+					<li>
+						<a href="/" title="News">News</a>
+					</li>
+					<li>
+						<a href="/" title="Feedback">Feedback</a>
+					</li>
+					<li>
+						<a href="/" title="Contact Us">Contact Us</a>
+					</li>
+					<li>
+						<a href="/" title="Language">Language</a>
+						<ul class="yijiw">
+							<div class="yiji">
+								<li>
+									 <a href="/" title="English">English</a>
+								</li>
+								<li>
+									 <a href="/" title="etc1">其他语言1</a>
+								</li>
+								<li>
+									 <a href="/" title="etc2">其他语言2</a>
+								</li>
+							</div>
+						</ul>
+					</li>
+					<div class="clear"></div>
+				</ul>
+			</nav>
+			<div class="clear"></div>	
+		</div>		
+	</header>
+	
+	<!--  滚屏 banner  -->
+	<div class="banner">
+		<div class="slideshow" style="position:relative; padding-bottom:39.0625%; height:0px; overflow:hidden;">
+			<div class="slider" style=" position:absolute; width:100%; height:100%; left:0px; top:0px;">
+				<div class="item">
+					<a href="/" title="Tanzi product">
+						<picture>
+							<source media="(min-width: 480px)" srcset="Car_pic/bannerpic/bannerpic1.PNG">
+							<source media="(min-width: 479px)" srcset="Car_pic/bannerpic/bannerpic1.PNG">
+							<img  src="Car_pic/bannerpic/bannerpic1.PNG"title="bannerpic1"alt="bannerpic1"/>
+						</picture>
+					</a>
+				</div>
+				<div class="item">
+					<a href="/" title="Tanzi product">
+						<picture>
+							<source media="(min-width: 480px)" srcset="Car_pic/bannerpic/bannerpic2.PNG">
+							<source media="(min-width: 479px)" srcset="Car_pic/bannerpic/bannerpic2.PNG">
+							<img  src="Car_pic/bannerpic/bannerpic2.PNG"title="bannerpic2"alt="bannerpic2"/>
+						</picture>
+					</a>
+				</div>
+				<div class="item">
+					<a href="/" title="Tanzi product">
+						<picture>
+							<source media="(min-width: 480px)" srcset="Car_pic/bannerpic/bannerpic3.PNG">
+							<source media="(min-width: 479px)" srcset="Car_pic/bannerpic/bannerpic3.PNG">
+							<img  src="Car_pic/bannerpic/bannerpic3.PNG"title="bannerpic3"alt="bannerpic3"/>
+						</picture>
+					</a>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<script>
+	  var bannerIntervalTime = 5;
+	</script>
+	
+	<script type="text/javascript">
+	  $(function () {
+	    $(".slider").slick({
+	      autoplay: true,
+	      autoplaySpeed: bannerIntervalTime*1000,
+	      draggable: true,
+	      arrows: true,
+	      dots: true,
+	      fade: true,
+	      speed: 900,
+	      infinite: true,
+	      cssEase: "cubic-bezier(0.7, 0, 0.3, 1)",
+	      touchThreshold: 100
+	    });
+	  });
+	</script>
+	
+	
+	<!-- main -->
+	<div class="section">
+		<div class="sec1">
+			<div class="contain">
+				<div class="sec1-tbody">
+					<div class="sec1-tbody-right" data-scroll-reveal="enter right over .3s after .2s">
+						<div class="item-pic">
+							<a href="/" title="Tanzi about-us">
+								<img src="Car_pic/fourpic/fourpic1.PNG"title="fourpic1"alt="fourpic1"class="video">
+							</a>
+						</div>
+					</div>
+					<div class="sec1-tbody-img" data-scroll-reveal="enter bottom over .3s after .2s">
+						<div class="item-pic">
+							<a href="/" title="Tanzi about-us">
+								<img src="Car_pic/fourpic/fourpic2.PNG"title="fourpic2"alt="fourpic2"class="video">
+							</a>
+						</div>
+					</div>
+					<div class="sec1-tbody-left" data-scroll-reveal="enter left over .3s after .2s">
+						<div class="sec-title-top text-left">
+							<a href="/" title="Tanzi OUR STORY" class="top-name self-ellipsis">Tanzi OUR STORY</a>
+						</div>
+						<div class="sec1-title">
+							<a title="Welcome To Tanzi" href="/" class="titles self-ellipsis-2">Welcome To Tanzi</a>
+						</div>
+						<div class="sec1-tbody-text self-ellipsis-5">
+							<p>
+								<a title="Tanzi summary">
+									HERE IS TANZI SUMMARY 这里可以写点东西介绍自己
+									xxxxxxxxxxxxxxxxxxx
+									xxxxxxxxxxxxx
+								</a>
+							</p>
+						</div>
+						<div class="sec1-tbody-btn sec-tbody-btn">
+							<a href="/" class="btnn">
+								更多故事
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="sec1-bottom" data-scroll-reveal="enter bottom over .5s after .2s">
+				<div class="contain">
+					<div class="sec1-bottom-list">
+						<div class="sec1-bottom-item">
+							<div class="item-box">
+								<span class="item-top self-ellipsis"  title="出口的数字">
+									<!-- data-to是数字动画效果 表示最终到达什么值 -->
+									<span class="num timer" data-to="10000" data-speed="2500">
+										10000
+									</span>
+									+
+								</span>
+								<span class="item-bottom self-ellipsis-2"  title="Export Vehicles">
+									Tanzi Export Vehicles
+								</span>
+							</div>
+						</div>
+						
+						<div class="sec1-bottom-item">
+							<div class="item-box">
+								<span class="item-top self-ellipsis"  title="出口的国家">
+									<!-- data-to是数字动画效果 表示最终到达什么值 -->
+									<span class="num timer" data-to="50" data-speed="2500">
+										50
+									</span>
+									+
+								</span>
+								<span class="item-bottom self-ellipsis-2"  title="Export Countries">
+									Tanzi Export Countries
+								</span>
+							</div>
+						</div>
+						
+						<div class="sec1-bottom-item">
+							<div class="item-box">
+								<span class="item-top self-ellipsis"  title="交易经验">
+									<!-- data-to是数字动画效果 表示最终到达什么值 -->
+									<span class="num timer" data-to="8" data-speed="2500">
+										8
+									</span>
+									+
+								</span>
+								<span class="item-bottom self-ellipsis-2"  title="Trading Experience">
+									Tanzi Trading Experience
+								</span>
+							</div>
+						</div>
+						
+						<div class="sec1-bottom-item">
+							<div class="item-box">
+								<span class="item-top self-ellipsis"  title="库存车辆">
+									<!-- data-to是数字动画效果 表示最终到达什么值 -->
+									<span class="num timer" data-to="1000" data-speed="2500">
+										1000
+									</span>
+									+
+								</span>
+								<span class="item-bottom self-ellipsis-2"  title="Warehouse Vehicles">
+									Tanzi Warehouse Vehicles
+								</span>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sec2">
+			<div class="contain">
+				<div class="sec-title-top text-center" data-scroll-reveal="enter bottom over .3s after .2s">
+					<a title="WHAT COULD WE SUPPLY?" href="/" class="top-name self-ellipsis">WHAT COULD WE SUPPLY?</a>
+				</div>
+				<div class="sec-title text-center"  data-scroll-reveal="enter bottom over .3s after .2s">
+					<a href="/products.html" class="titles self-ellipsis-2"title="Our Products">Our Products</a>
+				</div>
+				<div class="sec2-tbody"  data-scroll-reveal="enter bottom over .5s after .2s">
+					<div class="sec2-tbody-list">
+						<div class="sec2-tbody-item pro-item">
+							<div class="item-box">
+								<div class="item-pic scale-big">
+									<a href="/">
+										<img src="Car_pic/picdetail/product1.PNG"title="product1" alt="product1">
+									</a>
+								</div>
+								<div class="item-body">
+									<div class="item-title">
+										<a href="/" title="product1" class="self-ellipsis">product1</a>
+									</div>
+									<div class="item-desc">
+										<a href="/" title="" class="self-ellipsis"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="sec2-tbody-item pro-item">
+							<div class="item-box">
+								<div class="item-pic scale-big">
+									<a href="/">
+										<img src="Car_pic/picdetail/product2.PNG"title="product2" alt="product2">
+									</a>
+								</div>
+								<div class="item-body">
+									<div class="item-title">
+										<a href="/" title="product2" class="self-ellipsis">product2</a>
+									</div>
+									<div class="item-desc">
+										<a href="/" title="" class="self-ellipsis"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sec5">
+			<div class="contain">
+				<div class="sec-title-top white text-center" data-scroll-reveal="enter bottom over .3s after .2s">
+					<p class="top-name self-ellipsis" title=""></p>
+				</div>
+				<div class="sec-title white text-center"  data-scroll-reveal="enter bottom over .3s after .2s">
+					<a title="FAQ" href="/"  class="titles self-ellipsis-2">FAQ</a>
+				</div>
+				<div class="sec5-tbody">
+					<div class="sec5-tbody-list">
+						<div class="sec5-list-item">
+							<div class="item-box">
+								<div class="faq-item-name">
+									<p>Q: Why should you buy from us not from other suppliers?</p>
+								</div>
+								<div title="TESLA,BYD, VOLKSWAGEN, ZEEKR, LI, HONDA, CHANGAN, HAVAL, GEELY, BMW, RADAR, BENZ, AUDI, etc，specially authorized by some major EV brands as agents for global trading." class="faq-item-text">
+									<p>A: TESLA,BYD, VOLKSWAGEN, ZEEKR, LI, HONDA, CHANGAN, HAVAL, GEELY, BMW, RADAR, BENZ, AUDI, etc，specially authorized by some major EV brands as agents for global trading.</p>
+								</div>
+							</div>
+						</div>
+						<div class="sec5-list-item">
+							<div class="item-box">
+								<div class="faq-item-name">
+									<p>Q: question2?</p>
+								</div>
+								<div title="Answer2" class="faq-item-text">
+									<p>A: Answer2</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sec7">
+			<div class="contain">
+				<div class="sec7-tbody">
+					<div class="sec7-tbody-img" data-scroll-reveal="enter bottom over .3s after .2s">
+						<div class="item-pic">
+							<a href="/"title="">
+								<img src="Car_pic/allband.jpg" title="TANZI" alt="TANZI" class="video">
+							</a>
+						</div>
+					</div>
+					<div class="sec7-tbody-info" data-scroll-reveal="enter bottom over .3s after .2s">
+						<div class="sec-title-top text-left">
+							<p class="top-name self-ellipsis" title="Partner"> Partner </p>
+						</div>
+						<div class="sec-title text-left ">
+							<a class="titles self-ellipsis-2" href="/" title="Our Partner" >Our Partner</a>
+						</div>
+						<div class="sec7-tbody-text self-ellipsis-6">
+							<a href="/" class="text-href"title="">
+								We have built long-term cooperation with top EV brands, including TESLA, BYD, VOLKSWAGEN, ZEEKR, LI, HONDA, CHANGAN, HAVAL, GEELY, BMW, RADAR, BENZ, AUDI, etc, specially authorized by some major EV brands as agents for global trading.
+							</a>
+						</div>
+						<div class="sec7-tbody-btn sec-tbody-btn">
+							<a href="/about-us.html" class="btnn">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</div>
+	<div class="tankaung"></div>
+	<script>
+			$(".sec1-tbody-img .item-pic img.player").click(function(e){
+				e.preventDefault();
+	
+				var _this = $(this),
+					$src = _this.data("src"),
+					$modal = $(".tankaung");
+	
+				$modal.show().html('<div class="tankaungn2"><iframe src="'+$src+'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><i class="iconfont icon-a-guanbi1 layui-icon-close item-close" style="position: absolute; right: 2.60417%; top: 2.60417%; color: #fff; font-size: 30px; font-size: 3rem;width: 40px; cursor: pointer;"></i>')
+			});
+			$(".tankaung .item-close").click(function(){
+				$(this).hide();
+			})
+			$(".tankaung").click(function(){
+				$(this).hide();
+			})
+			$(".sec7-tbody-img .item-pic img.player").click(function(e){
+				e.preventDefault();
+	
+				var _this = $(this),
+					$src = _this.data("src"),
+					$modal = $(".tankaung");
+	
+				$modal.show().html('<div class="tankaungn2"><iframe src="'+$src+'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><i class="iconfont icon-a-guanbi1 layui-icon-close item-close" style="position: absolute; right: 2.60417%; top: 2.60417%; color: #fff; font-size: 30px; font-size: 3rem;width: 40px; cursor: pointer;"></i>')
+			});
+			$(".tankaung .item-close").click(function(){
+				$(this).hide();
+			})
+			$(".tankaung").click(function(){
+				$(this).hide();
+			})
+		</script>
+		<footer class="footer">
+			<div class="contain">
+				<div class="fo-top">
+					<div class="flist1 ">
+						<p class="footer-title">Contact Us</p>
+						<ul class="foot-list">
+							<li>E-mail: <a style="display:inline-block; direction:ltr" href="mailto:daotanwang@gmail.com" title="Contact us">daotanwang@gmail.com</a></li>
+							<li>Mobile: <span style="display:inline-block; direction:ltr">+86 123456789</span></li>
+							<li>WeChat: <span style="display:inline-block; direction:ltr">+86 123456789</span></li>
+							<li>WhatsApp: <a style="display:inline-block; direction:ltr" href="https://api.whatsapp.com/send?phone=86123456789" title="+86123456789" target="_blank" rel="nofollow">+86123456789</a></li>
+							<li>Add.: <span style="display:inline-block; direction:ltr">Shenzhen, China</span></li>
+						</ul>
+					</div>
+					<div class="flist2 ">
+						<p class="footer-title">Navigation</p>
+						<ul class="foot-nav">
+							<li> <a href="/" title="Home">Home</a></li>
+							<li> <a href="/" title="About Us">About Us</a></li>
+							<li> <a href="/" title="Products">Products</a></li>
+							<li> <a href="/" title="News">News</a></li>
+							<li> <a href="/" title="Feedback">Feedback</a></li>
+							<li> <a href="/" title="Contact Us">Contact Us</a></li>
+						</ul>
+					</div>
+					<div class="flist3 ">
+						<p class="footer-title">Products</p>
+						<ul class="foot-nav">
+							<a href="/" title="BYD">BYD</a>
+							<a href="/" title="更多车">更多车</a>
+						</ul>
+					</div>
+					<div class="flist4 ">
+						<p class="footer-title">Follow Us</p>
+						<div class="f-follow ">
+							<a href="/" target="_blank" rel="nofollow" class="hover-image"><img src="contact/wechat.PNG" alt="wechat" /><div class="hover-popup"></div> </a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="fo-bot">
+				<div class="contain fix">
+					<p class="copyright">
+						Copyright © Tanzi All Rights Reserved.| <a href="/" target="_blank">Sitemap</a>| Technical Support:
+						<a href="/"target="_blank" rel="nofollow">Tanzi</a>
+					</p>
+				</div>
+			</div>			
+		</footer>
+	</body>
+</html>
